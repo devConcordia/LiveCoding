@@ -1,0 +1,27 @@
+<html>
+    <head>
+		<meta charset='UTF-8' />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="format-detection" content="telephone=yes" />
+		<title>View Icons</title>
+		<style>
+			* { padding:0; margin:0; }
+		</style>
+        <script src="TrueType.js"></script>
+        <script type="module">
+		
+		import FileLoader from "/workspace/module/http/FileLoader/FileLoader.mjs";
+
+		window.addEventListener('DOMContentLoaded', function() {
+			window.addEventListener('load', function(e) {
+				
+				FileLoader.Load( "../icons.ttf", "arraybuffer", ShowTtfFile );
+				
+			}, false);
+		}, false);
+
+		</script>
+    </head>
+    <body>
+    </body>
+</html>
